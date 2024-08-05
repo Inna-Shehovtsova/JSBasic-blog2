@@ -1,0 +1,36 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "educational project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Inna-Shehovtsova/JSBasic-blog2.git"
+  },
+  "keywords": [
+    "educational",
+    "otus",
+    "blog"
+  ],
+  "author": "ShehovtsovaIV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inna-Shehovtsova/JSBasic-blog2/issues"
+  },
+  "homepage": "https://github.com/Inna-Shehovtsova/JSBasic-blog2#readme",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "eslint": "^9.8.0",
+    "eslint-plugin-jest": "^28.7.0",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0"
+  }
+}
