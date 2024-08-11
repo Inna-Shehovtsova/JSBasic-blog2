@@ -1,23 +1,15 @@
-//import eslintConfigPrettier from "eslint-config-prettier";
 const eslintConfigPrettier = require("eslint-config-prettier");
+const jest = require("eslint-plugin-jest");
+
 module.exports = [
+  //...require('@eslint/js').configs.recommended,
   {
+    files: ["test/**"],
+    ...jest.configs["flat/recommended"],
     rules: {
-      semi: "error",
-      "prefer-const": "error",
+      ...jest.configs["flat/recommended"].rules,
+      "jest/prefer-expect-assertions": "off",
     },
-  },
-  {
-    files: ["src/**/*.js"],
-    ignores: ["**/*.config.js", "!**/eslint.config.js"],
-    rules: {
-      "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error",
-      "jest/no-identical-title": "error",
-      "jest/prefer-to-have-length": "warn",
-      "jest/valid-expect": "error",
-    },
-    plugins: ["jest"],
   },
   eslintConfigPrettier,
 ];
