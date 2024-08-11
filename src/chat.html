@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Погода</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <content class="block1">
+
+      <div class="menu">
+        <p><a href="./index.html">Главная</a></p> 
+      <p><a href="./page.html">История вязания</a></p> 
+    
+    </div>
+       
+      
+      <div class="chat_main"> <div class="message"><p  class="name">Test1
+      </p><p class="mtext">Test text
+      </p></div>
+      <div class="message"><p  class="name">Test2
+      </p><p class="mtext">Test text
+      </p></div>
+      <div class="message"><p  class="name">Test3
+      </p><p class="mtext">Test text
+      </p></div>
+      </div>
+      <div class="chat_input">
+        <form>
+          <input type="text" class="input-text" />
+          <button class="button">Отправить</button>
+        </form>
+      </div>
+        
+    </content>
+    <%= require('html-loader!./footer.html').default %>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

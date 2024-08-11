@@ -1,0 +1,50 @@
+.block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-style: dashed;
+  border-color: burlywood;
+  align-items: left;
+}
+.menu {
+  align-self: center;
+  border-style: dashed;
+  border-color: burlywood;
+}
+.history {
+  border-style: dashed;
+  border-color: burlywood;
+}
+.main {
+  border-style: dashed;
+  border-color: burlywood;
+}
+.p + main {
+  align-items: left;
+}
+@media (min-width: 100px) {
+  .block1 {
+    flex-direction: row;
+  }
+}
+.chat_main {
+  align-self: left;
+  border-style: dashed;
+  border-color: burlywood;
+}
+
+.header {
+  background-color: rgb(223, 207, 185);
+  font-family: "Courier New", Courier, monospace;
+}
+.footer {
+  background-color: rgb(187, 162, 129);
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: row;
+  position: sticky;
+  bottom: 0%;
+}
